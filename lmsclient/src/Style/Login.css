@@ -1,0 +1,108 @@
+* {
+    font-family: 'Hahmlet', serif;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-header {
+    height: 70px;
+    width: 100%;
+    color: White;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: #219F94;
+}
+.login-form {
+    width: 450px;
+    height: 300px;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.logo {
+    padding:0;
+    width: 200px;
+}
+.title {
+    font-size: 20px;
+    padding: 15px;
+}
+.foot-text {
+    color:white;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+}
+.name, .password {
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #219F94;
+}
+.form-header {
+background-color: #219F94;
+text-align: center;
+border-top-left-radius: 55px;
+height: 40px;
+color: White;
+font-size: 22px
+}
+.form-data{
+    border-left: 2px solid #219F94;
+    border-right: 2px solid #219F94;
+}
+.form-bot{
+    border-left: 2px solid #219F94;
+    border-right: 2px solid #219F94;
+    border-bottom: 2px solid #219F94;
+}
+.form-bot {
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 55px;
+}
+.form-bot button {
+    width: 100px;
+    align-self: center;
+    margin-top:15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid #219F94;
+    color: #219F94;
+    background-color: white; 
+}
+.form-bot button:hover {
+    width: 100px;
+    align-self: center;
+    margin-top:15px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid #219F94;
+    color: white;
+    background-color: #219F94;   
+    
+}
+.name {
+    margin:20px;
+}
+.password {
+    margin: 10px 20px 20px 20px;
+}
+.forgot {
+    margin-left: 20px;
+    font-size: 15px;
+    color: gray;
+}

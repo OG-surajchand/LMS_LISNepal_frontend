@@ -1,0 +1,11 @@
+.register-footer {
+    background-color: #219F94;
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
