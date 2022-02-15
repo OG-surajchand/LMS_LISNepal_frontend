@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Style/Footer.css'
 
-function Footer() {
+function FooterComponent() {
   return(
       <>
       <div className="register-footer">© 2007-2022 All Rights Reserved.  Yomari.</div>
@@ -9,4 +9,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default FooterComponent;

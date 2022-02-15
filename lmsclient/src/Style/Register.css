@@ -1,25 +1,62 @@
-.main_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.mid_container {
+  background-color: #41b3a2;
+  height: calc(100vh - 85px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
 }
-.back_form {
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 95px);
-    width: 750px;
-    background: rgba(70, 105, 113, 0.7);
-    align-items: center;
+.mid-container {
+  display: flex;
+  justify-content: center;
 }
-.main_body {
-    display: flex;
-    flex-direction: row;
+.upper-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
-li {
-    list-style-type: none;
-    font-size: 16px;
-    color: White;
+.left-container,
+.right-container {
+  display: flex;
+  flex-direction: column;
 }
-h2 {
-    color: white;
+.data-field {
+  border-radius: 5px;
+  padding: 6px 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: black;
+}
+.training-line {
+  border-radius: 5px;
+  padding: 6px 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  color: black;
+}
+.create_user {
+  padding: 7px 20px;
+  border-radius: 15px;
+  border: 2px solid #219f94;
+  cursor: pointer;
+  color: #219f94;
+  background-color: white;
+}
+.create_user:hover {
+  color: white;
+  background-color: #219f94;
+  border: 2px solid white;
+}
+.option-field {
+  color: black;
+}
+input[type="file"] {
+  background-color: white;
+  padding: 3.9px 18px;
 }
