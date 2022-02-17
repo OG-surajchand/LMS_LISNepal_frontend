@@ -1,29 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TopHeader from "../Components/TopHeader";
 import SidebarComponent from "../Components/Sidebar";
 import FooterComponent from "../Components/Footer";
+import Information from "../Components/Information";
+import Training from "../Components/Training";
+import Projects from "../Components/Projects";
+import SkillMatrix from "../Components/SkillMatrix";
 import "antd/dist/antd.css";
-import { Layout } from "antd";
-import { Menu } from "antd";
+import { Layout, Menu } from "antd";
 import {
-  MailOutlined,
-  AppstoreOutlined,
+  FileTextOutlined,
+  SolutionOutlined,
+  LaptopOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
 
-const { SubMenu } = Menu;
 const { Content } = Layout;
 
 const Profile = () => {
-  const [current, setcurrent] = useState("mail");
+  const [current, setCurrent] = useState("information");
+
+  const [data, setdata] = useState("");
 
   const handleClick = (e) => {
-    setcurrent({ current: e.key });
+    setCurrent(e.key);
+  };
+  const render_component = () => {
+    switch (current) {
+      case "information":
+        return <Information />;
+      case "training":
+        return <Training />;
+      case "projects":
+        return <Projects />;
+      case "skillmatrix":
+        return <SkillMatrix />;
+    }
   };
   return (
     <>
       <Layout>
-        <TopHeader />
+        <TopHeader title="Resource Profile" />
         <Layout>
           <SidebarComponent />
           <Content style={{ margin: "20px 16px 0px 220px" }}>
@@ -31,42 +48,26 @@ const Profile = () => {
               className="site-layout-background"
               style={{ padding: 24, minHeight: 600 }}
             >
-              <div className="profile-data">
+              <div className="profile-data" selectedKeys={current}>
                 <Menu
-                  onClick={this.handleClick}
-                  selectedKeys={[current]}
+                  onClick={handleClick}
+                  selectedKeys={current}
                   mode="horizontal"
                 >
-                  <Menu.Item key="mail" icon={<MailOutlined />}>
-                    Navigation One
+                  <Menu.Item key="information" icon={<SolutionOutlined />}>
+                    My Information
                   </Menu.Item>
-                  <Menu.Item key="app" disabled icon={<AppstoreOutlined />}>
-                    Navigation Two
+                  <Menu.Item key="training" icon={<FileTextOutlined />}>
+                    Training
                   </Menu.Item>
-                  <SubMenu
-                    key="SubMenu"
-                    icon={<SettingOutlined />}
-                    title="Navigation Three - Submenu"
-                  >
-                    <Menu.ItemGroup title="Item 1">
-                      <Menu.Item key="setting:1">Option 1</Menu.Item>
-                      <Menu.Item key="setting:2">Option 2</Menu.Item>
-                    </Menu.ItemGroup>
-                    <Menu.ItemGroup title="Item 2">
-                      <Menu.Item key="setting:3">Option 3</Menu.Item>
-                      <Menu.Item key="setting:4">Option 4</Menu.Item>
-                    </Menu.ItemGroup>
-                  </SubMenu>
-                  <Menu.Item key="alipay">
-                    <a
-                      href="https://ant.design"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Navigation Four - Link
-                    </a>
+                  <Menu.Item key="projects" icon={<LaptopOutlined />}>
+                    Projects
+                  </Menu.Item>
+                  <Menu.Item key="skillmatrix" icon={<SettingOutlined />}>
+                    Skill Matrix
                   </Menu.Item>
                 </Menu>
+                <div className="body-content">{render_component()}</div>
               </div>
             </div>
           </Content>

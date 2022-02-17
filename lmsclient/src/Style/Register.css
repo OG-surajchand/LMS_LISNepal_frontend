@@ -8,19 +8,18 @@
   align-items: center;
   color: white;
 }
+
+.upper-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.upper-container .left-container,
+.right-container {
+  width: 40%;
+}
 .mid-container {
   display: flex;
   justify-content: center;
-}
-.upper-container {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.left-container,
-.right-container {
-  display: flex;
-  flex-direction: column;
 }
 .data-field {
   border-radius: 5px;
@@ -59,4 +58,10 @@
 input[type="file"] {
   background-color: white;
   padding: 3.9px 18px;
+}
+
+.left-container,
+.right-container {
+  display: flex;
+  flex-direction: column;
 }
