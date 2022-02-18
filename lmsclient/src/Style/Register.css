@@ -1,5 +1,4 @@
 .mid_container {
-  background-color: #41b3a2;
   height: calc(100vh - 85px);
   width: 100%;
   display: flex;
@@ -29,6 +28,7 @@
   border: none;
   outline: none;
   color: black;
+  background-color: #b3d6d3;
 }
 .training-line {
   border-radius: 5px;
@@ -38,6 +38,7 @@
   border: none;
   outline: none;
   color: black;
+  background-color: #b3d6d3;
 }
 .create_user {
   padding: 7px 20px;

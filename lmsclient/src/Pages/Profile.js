@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TopHeader from "../Components/TopHeader";
 import SidebarComponent from "../Components/Sidebar";
 import FooterComponent from "../Components/Footer";
@@ -55,7 +55,7 @@ const Profile = () => {
                   mode="horizontal"
                 >
                   <Menu.Item key="information" icon={<SolutionOutlined />}>
-                    My Information
+                    Basic Information
                   </Menu.Item>
                   <Menu.Item key="training" icon={<FileTextOutlined />}>
                     Training

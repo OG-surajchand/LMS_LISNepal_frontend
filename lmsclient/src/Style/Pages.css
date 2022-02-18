@@ -17,11 +17,11 @@
           justify-content: space-evenly;
   text-align: center;
   margin-top: 5px;
+  gap: 10px;
 }
 
 .profile-top .profile {
   width: 40%;
-  background-color: beige;
   margin: 2px;
 }
 
@@ -34,24 +34,45 @@
 }
 
 .user_photo {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border: 2px solid #219f94;
   border-radius: 20px;
-  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .profile-bottom button {
   padding: 6px 40px;
   border-radius: 25px;
   border: 2px solid #219f94;
-  color: #219f94;
-  background-color: white;
+  color: white;
 }
 
 .profile-bottom button:hover {
   background-color: #219f94;
   color: white;
   border: 2px solid #219f94;
+}
+
+label {
+  color: #219f94;
+  font-size: 15px;
+}
+
+.icons {
+  size: 10px;
+  margin: 5px;
+}
+
+.field {
+  padding: 5px 15px;
+  border: 1px solid #219f94;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.edit-field {
+  margin: 2px;
 }
 /*# sourceMappingURL=Pages.css.map */
